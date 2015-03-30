@@ -5,13 +5,13 @@ import java.io.File;
 import edu.princeton.cs.algs4.Graph;
 import edu.princeton.cs.introcs.In;
 
-public class Test {
+public class CC_client {
 	public static void main(String[] args){
 		File file = new File("tinyG.txt");
 		In in = new In(file);
 		Graph G = new Graph(in);
-		BreadthFirstPaths bfp = new BreadthFirstPaths(G, 0);
-		System.out.println(bfp.distTo(9));
+		ConnectedComponents cc = new ConnectedComponents(G);
+		System.out.println(cc.connected(0, 4));
 	}
 
 }

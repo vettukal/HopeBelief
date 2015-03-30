@@ -1,5 +1,7 @@
 package one;
 
+import edu.princeton.cs.algs4.Graph;
+
 public class BreadthFirstPaths
 {
  private boolean[] marked; // Is a shortest path to this vertex known?

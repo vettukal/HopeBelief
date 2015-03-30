@@ -1,5 +1,7 @@
 package one;
 
+import edu.princeton.cs.algs4.Graph;
+
 public class Ex_4_1_10 {
     
     private boolean[] marked;
