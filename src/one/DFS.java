@@ -1,5 +1,7 @@
 package one;
 
+import edu.princeton.cs.algs4.Graph;
+
 public class DFS {
     
     private boolean[] marked;
