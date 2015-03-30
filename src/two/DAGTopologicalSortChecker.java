@@ -4,9 +4,7 @@ import edu.princeton.cs.algs4.Graph;
 
 public class DAGTopologicalSortChecker {
 
-	/**
-	 * @param args
-	 */
+	
 	public static void main(String[] args) {
 
 	}
