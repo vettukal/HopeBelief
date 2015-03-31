@@ -1,14 +1,28 @@
 package two;
 
+
 import edu.princeton.cs.algs4.Graph;
 
-public class TopologicalSortValidator {
+public class Ex_4_2_9 {
 
+	/**
+	 * Write a method that checks whether or not a given permutation of a DAG’s vertices
+	 * is a topological order of that DAG. 
+	 */
+	
 	
 	public static void main(String[] args) {
 
 	}
 	
+	/**
+	 * 
+	 * @param G = Graph
+	 * @param order = topological sort order
+	 * @return whether the topological order is correct for the given graph G
+	 * 
+	 * This method does its Job in O(E.V) time. 
+	 */
 	public static boolean isValidTopologicalSort(Graph G,int[] order){
 		// The approach will be check for each edge v->w, v should come before w in order[].
 		// I can think of O(n2) method for it.
