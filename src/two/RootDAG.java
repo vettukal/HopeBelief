@@ -23,14 +23,14 @@ public class RootDAG {
 		
 		int counter =0;
 		for (int i = 0; i < check.length; i++) {
-			if(check[i]==true){
+			if(check[i]==false){
 				++counter;
 			}
 		}
 		int[] ans= new int[counter];
 		counter = 0;
 		for (int i = 0; i < check.length; i++) {
-			if(check[i]){
+			if(!check[i]){
 				ans[counter++] = i;
 			}
 		}
