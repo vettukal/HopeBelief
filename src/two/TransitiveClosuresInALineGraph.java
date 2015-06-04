@@ -1,4 +1,4 @@
-package two;
+package src.two;
 
 
 public class TransitiveClosuresInALineGraph {
