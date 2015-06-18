@@ -1,0 +1,33 @@
+package book.two;
+
+public class PQ {
+
+	int[] arr;
+	int N;
+	public static void main(String[] args) {
+
+	}
+	
+	public PQ(int size) {
+		arr = new int[size];
+	}
+
+	public void insert(int k){
+		arr[++N] = k;
+		swim(N);	
+	}
+
+	private swim(int pos){
+		while(pos>1){
+			if(arr[pos]<=arr[pos/2])
+				break;
+			
+			int temp = arr[pos];
+			arr[pos] = arr[pos/2];
+			arr[pos/2] = temp;
+
+			pos /=2;
+		}
+	}
+
+}
